@@ -1,0 +1,95 @@
+[
+  {
+    "id": "carry-seum",
+    "name": "Carry-seum",
+    "price": 250000,
+    "currency": "VND",
+    "description": {
+      "vi": "Mang theo vẻ hùng vĩ của những bảo tàng cổ đại bên mình. Dáng túi vượt thời gian dành cho người yêu văn hoá.",
+      "en": "Carry the grandeur of ancient museums wherever you go. A timeless silhouette for the cultured wanderer."
+    },
+    "colors": [
+      { "name": { "vi": "Đen", "en": "Black" }, "image": "img/Carry-seum/black.png" }
+    ]
+  },
+  {
+    "id": "chic-en-itza",
+    "name": "Chic-en Itzá",
+    "price": 280000,
+    "currency": "VND",
+    "description": {
+      "vi": "Nét chic tôn vinh một trong Bảy Kỳ Quan Mới. Đường nét mạnh mẽ, phong cách nhẹ nhàng.",
+      "en": "A chic tribute to one of the New Seven Wonders. Bold lines meet effortless style."
+    },
+    "colors": [
+      { "name": { "vi": "Trắng", "en": "White" }, "image": "img/Chic-en Itzá/white.png" }
+    ]
+  },
+  {
+    "id": "christ-the-redeemer",
+    "name": "Christ the Redeemer",
+    "price": 300000,
+    "currency": "VND",
+    "description": {
+      "vi": "Ôm trọn tinh thần Rio với vòng tay rộng mở. Có hai phối màu mộng mơ để bạn lựa chọn.",
+      "en": "Embrace the spirit of Rio with open arms. Available in two dreamy colorways."
+    },
+    "colors": [
+      { "name": { "vi": "Bạc hà", "en": "Mint" }, "image": "img/Christ the Redeemer/mint.png" },
+      { "name": { "vi": "Tím", "en": "Purple" }, "image": "img/Christ the Redeemer/purple.png" }
+    ]
+  },
+  {
+    "id": "pet-traw",
+    "name": "Pet-traw",
+    "price": 230000,
+    "currency": "VND",
+    "description": {
+      "vi": "Dành cho người mang theo tất cả — kể cả snack cho thú cưng. Nhẹ nhàng, thoáng mát, sẵn sàng cho mọi hành trình.",
+      "en": "For the one who carries everything — and their pet's snacks too. Light, breezy, and ready for anything."
+    },
+    "colors": [
+      { "name": { "vi": "Trắng", "en": "White" }, "image": "img/Pet-traw/white.png" }
+    ]
+  },
+  {
+    "id": "the-great-wall-e",
+    "name": "The Great Wall-e",
+    "price": 270000,
+    "currency": "VND",
+    "description": {
+      "vi": "Chiếc túi hoành tráng cho những ngày hoành tráng. Canvas chắc chắn, bền bỉ theo thời gian.",
+      "en": "A monumental bag for monumental days. Sturdy canvas that stands the test of time."
+    },
+    "colors": [
+      { "name": { "vi": "Trắng", "en": "White" }, "image": "img/The Great Wall-e/white.png" }
+    ]
+  },
+  {
+    "id": "the-taj-ma-all",
+    "name": "The Taj Ma-All",
+    "price": 290000,
+    "currency": "VND",
+    "description": {
+      "vi": "Chứa hết tất cả — từ đồ đi chợ đến những giấc mơ. Lời tri ân dành cho kỳ quan chứa đựng mọi thứ thật đẹp.",
+      "en": "Fits it all — from groceries to dreams. An ode to the wonder that holds everything beautifully."
+    },
+    "colors": [
+      { "name": { "vi": "Xanh lá", "en": "Green" }, "image": "img/The Taj Ma-All/green.png" }
+    ]
+  },
+  {
+    "id": "tote-osseum",
+    "name": "Tote-osseum",
+    "price": 260000,
+    "currency": "VND",
+    "description": {
+      "vi": "Chiếc tote xứng đáng được trưng bày. Màu sắc vui tươi cho những kiệt tác đời thường.",
+      "en": "A tote worthy of exhibition. Playful colors for everyday masterpieces."
+    },
+    "colors": [
+      { "name": { "vi": "Cam", "en": "Orange" }, "image": "img/Tote-osseum/orange.png" },
+      { "name": { "vi": "Hồng", "en": "Pink" }, "image": "img/Tote-osseum/pink.png" }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carávàn — Túi Canvas Thủ Công</title>
+  <meta name="description" content="carávàn — Túi canvas thủ công lấy cảm hứng từ các kỳ quan thế giới. Thiết kế độc đáo, chất liệu bền vững, đồng hành mỗi ngày.">
+  <meta name="keywords" content="túi canvas, túi tote, túi thủ công, thời trang bền vững, caravan bags, túi vải">
+  <meta name="author" content="carávàn">
+
+  <meta property="og:title" content="carávàn — Túi Canvas Thủ Công">
+  <meta property="og:description" content="Túi canvas thủ công lấy cảm hứng từ các kỳ quan thế giới. Mang theo câu chuyện của bạn.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="carávàn — Túi Canvas Thủ Công">
+  <meta name="twitter:description" content="Túi canvas thủ công lấy cảm hứng từ các kỳ quan thế giới.">
+  <meta name="twitter:image" content="img/logo.png">
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo" data-page="home">
+      <img src="img/logo.png" alt="carávàn logo">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" data-page="home" class="nav-link active" data-i18n="nav.home">Trang Chủ</a></li>
+      <li><a href="#" data-page="shop" class="nav-link" data-i18n="nav.shop">Cửa Hàng</a></li>
+      <li><a href="#" data-page="contact" class="nav-link" data-i18n="nav.contact">Liên Hệ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-label" id="langLabel">EN</span>
+      </button>
+      <button class="nav-cart" id="navCart" data-page="cart" aria-label="Shopping cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page: Home -->
+  <section class="page page-home active" id="page-home">
+    <div class="hero" style="background-image: url('img/background.png')">
+      <div class="hero-overlay">
+        <h1 class="hero-title">carávàn</h1>
+        <p class="hero-subtitle" data-i18n="home.subtitle">Túi canvas thủ công lấy cảm hứng từ các kỳ quan thế giới.<br>Mang theo câu chuyện của bạn, từng chiếc túi một.</p>
+        <button class="btn btn-primary" data-page="shop" data-i18n="home.shopNow">Mua Ngay</button>
+      </div>
+    </div>
+
+    <div class="home-features">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 data-i18n="home.feature1Title">Cảm Hứng Kỳ Quan</h3>
+        <p data-i18n="home.feature1Desc">Mỗi thiết kế là một bức thư tình gửi đến các địa danh mang tính biểu tượng, được tái hiện trên canvas.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+        </div>
+        <h3 data-i18n="home.feature2Title">Thủ Công Tỉ Mỉ</h3>
+        <p data-i18n="home.feature2Desc">Được làm từ vải canvas bền, thân thiện với môi trường — bền bỉ theo thời gian và đáng để yêu thương.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3 data-i18n="home.feature3Title">Đồng Hành Mỗi Ngày</h3>
+        <p data-i18n="home.feature3Desc">Từ chợ phiên đến phố thị — những chiếc túi này đi khắp nơi cùng bạn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page: Shop -->
+  <section class="page page-shop" id="page-shop">
+    <div class="shop-header">
+      <h2 data-i18n="shop.title">Bộ Sưu Tập</h2>
+      <p data-i18n="shop.subtitle">Bảy kỳ quan. Bảy chiếc túi. Chiếc nào kể câu chuyện của bạn?</p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- Page: Product Detail -->
+  <section class="page page-product" id="page-product">
+    <button class="back-btn" data-page="shop">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span data-i18n="product.back">Quay Lại</span>
+    </button>
+    <div class="product-detail">
+      <div class="product-detail-image">
+        <img id="productDetailImg" src="" alt="">
+      </div>
+      <div class="product-detail-info">
+        <h2 id="productDetailName"></h2>
+        <p class="product-detail-price" id="productDetailPrice"></p>
+        <p class="product-detail-desc" id="productDetailDesc"></p>
+        <div class="color-selector" id="colorSelector"></div>
+        <div class="quantity-selector">
+          <button class="qty-btn" id="qtyMinus">−</button>
+          <span class="qty-value" id="qtyValue">1</span>
+          <button class="qty-btn" id="qtyPlus">+</button>
+        </div>
+        <button class="btn btn-primary btn-add-cart" id="addToCart" data-i18n="product.addToCart">Thêm Vào Giỏ</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page: Cart -->
+  <section class="page page-cart" id="page-cart">
+    <h2 data-i18n="cart.title">Giỏ Hàng</h2>
+    <div class="cart-content">
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">
+        <p data-i18n="cart.empty">Giỏ hàng của bạn đang trống.</p>
+        <button class="btn btn-primary" data-page="shop" data-i18n="cart.continueShopping">Tiếp Tục Mua Sắm</button>
+      </div>
+      <div class="cart-summary" id="cartSummary">
+        <div class="cart-total">
+          <span data-i18n="cart.total">Tổng cộng</span>
+          <span id="cartTotal">0₫</span>
+        </div>
+        <button class="btn btn-primary btn-checkout" id="checkoutBtn" data-i18n="cart.checkout">Thanh Toán</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page: Checkout -->
+  <section class="page page-checkout" id="page-checkout">
+    <h2 data-i18n="checkout.title">Thanh Toán</h2>
+    <div class="checkout-content">
+      <form class="checkout-form" id="checkoutForm">
+        <div class="form-group">
+          <label for="custName" data-i18n="checkout.name">Họ và tên</label>
+          <input type="text" id="custName" data-i18n-placeholder="checkout.namePh" placeholder="Nguyễn Văn A" required>
+        </div>
+        <div class="form-group">
+          <label for="custPhone" data-i18n="checkout.phone">Số điện thoại</label>
+          <input type="tel" id="custPhone" data-i18n-placeholder="checkout.phonePh" placeholder="0901 234 567" required>
+        </div>
+        <div class="form-group">
+          <label for="custAddress" data-i18n="checkout.address">Địa chỉ giao hàng</label>
+          <textarea id="custAddress" rows="3" data-i18n-placeholder="checkout.addressPh" placeholder="123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="custNote" data-i18n="checkout.note">Ghi chú (tùy chọn)</label>
+          <textarea id="custNote" rows="2" data-i18n-placeholder="checkout.notePh" placeholder="Yêu cầu đặc biệt..."></textarea>
+        </div>
+        <div class="checkout-payment">
+          <div class="payment-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span data-i18n="checkout.cod">Thanh toán khi nhận hàng (COD)</span>
+          </div>
+          <p class="payment-note" data-i18n="checkout.codNote">Thanh toán khi nhận hàng. Không cần thanh toán trực tuyến.</p>
+        </div>
+        <div class="checkout-order-summary" id="checkoutSummary"></div>
+        <button type="submit" class="btn btn-primary btn-place-order" data-i18n="checkout.placeOrder">Đặt Hàng</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Page: Order Success -->
+  <section class="page page-success" id="page-success">
+    <div class="success-content">
+      <div class="success-icon">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h2 data-i18n="success.title">Đặt Hàng Thành Công!</h2>
+      <p data-i18n="success.message">Cảm ơn bạn đã mua sắm tại carávàn. Chúng tôi sẽ giao túi sớm — thanh toán bằng tiền mặt khi nhận hàng.</p>
+      <button class="btn btn-primary" data-page="home" data-i18n="success.backHome">Về Trang Chủ</button>
+    </div>
+  </section>
+
+  <!-- Page: Contact -->
+  <section class="page page-contact" id="page-contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 data-i18n="contact.title">Liên Hệ</h2>
+        <p data-i18n="contact.subtitle">Bạn có câu hỏi, muốn đặt hàng riêng, hay chỉ muốn chào hỏi? Chúng tôi rất muốn nghe từ bạn.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@caravan-bags.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+84 901 234 567</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="contact.location">TP. Hồ Chí Minh, Việt Nam</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="contactName" data-i18n="contact.formName">Tên</label>
+          <input type="text" id="contactName" data-i18n-placeholder="contact.formNamePh" placeholder="Tên của bạn" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" data-i18n-placeholder="contact.formEmailPh" placeholder="email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contactMsg" data-i18n="contact.formMsg">Tin nhắn</label>
+          <textarea id="contactMsg" rows="5" data-i18n-placeholder="contact.formMsgPh" placeholder="Hãy cho chúng tôi biết bạn đang nghĩ gì..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Gửi Tin Nhắn</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Messenger Floating Button -->
+  <a href="https://m.me/placeholder" target="_blank" rel="noopener" class="messenger-btn" id="messengerBtn" aria-label="Chat on Messenger">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.2 5.42 3.15 7.2V22l2.96-1.63c.84.23 1.72.36 2.64.36h.25c5.64 0 10-4.13 10-9.7S17.64 2 12 2zm1.08 13.06l-2.54-2.73L5.17 15.1l5.9-6.28 2.54 2.73 5.37-2.77-5.9 6.28z"/>
+    </svg>
+  </a>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
